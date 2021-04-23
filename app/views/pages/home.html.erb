@@ -1,0 +1,30 @@
+<h1>Welcome#home</h1>
+<p>You can find me at "views/pages/home.html.erb"</p>
+
+<div data-controller="hello" data-hello-number-value=4>
+  <h1 data-hello-target= "output"></h1>
+  <button data-action="hello#clicked">Click Me</button>
+</div>
+
+<div data-controller="text-input">
+  <input type="text" data-action='text-input#changed' data-text-input-target='input'>
+  <h1 data-text-input-target='output'></h1>
+</div>
+
+<div 
+  data-controller="styling"
+  data-styling-primary-class="btn-primary"
+>
+  <button class='btn' data-styling-target='button' data-action="styling#clicked">
+  CLICK ME
+  </button>
+</div>
+
+<div 
+  data-controller="styling"
+  data-styling-primary-class="btn-primary"
+>
+  <button class='btn' data-styling-target='button' data-action="styling#clicked:once">
+  CLICK ONCE
+  </button>
+</div>
